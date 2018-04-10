@@ -41,7 +41,7 @@ pipeline {
         
         stage('Check Style') {
             steps {
-                sh 'echo "Run PHP_CodeSniffer: bin/phpcs'
+                sh 'echo "Run PHP_CodeSniffer: bin/phpcs"'
                 /* https://github.com/squizlabs/PHP_CodeSniffer */
             }
         }
