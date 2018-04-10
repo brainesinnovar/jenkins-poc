@@ -1,4 +1,4 @@
-repositoryUrl = "ssh://git@github.com:brainesinnovar/jenkins-poc.git"
+repositoryUrl = "git@github.com:brainesinnovar/jenkins-poc.git"
 branch = "master"
 
 pipeline {
