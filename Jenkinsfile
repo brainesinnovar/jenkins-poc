@@ -61,7 +61,7 @@ pipeline {
         }
         
         /* -- SLOW */
-        stage('Mess detection') {
+        stage('Mess Detection') {
             steps {
                 sh 'echo "Run PHP Mess Detector: bin/phpmd"'
                 /* https://phpmd.org/ */
@@ -69,14 +69,14 @@ pipeline {
         }
         
         /* -- SLOW */
-        stage('Software metrics') {
+        stage('Software Metrics') {
             steps { 
-                sh 'echo "RUn PHP Depend: bin/pdepend"'
+                sh 'echo "Run PHP Depend: bin/pdepend"'
                 /* https://pdepend.org/ */
             }
         }
         
-        stage('Generate documentation') {
+        stage('Generate Documentation') {
             steps { 
                 sh 'echo "run bin/phpdox"'
                 /* http://phpdox.de/ */
