@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Clone sources') {
             steps {
-                sh 'echo hello'
+                git url: repositoryUrl, credentialsId: "git-credentials", branch: branch
             }
 	}
 
