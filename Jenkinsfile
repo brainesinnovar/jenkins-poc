@@ -6,11 +6,15 @@ pipeline {
 
     stages {
         stage('Clone sources') {
-
+            steps {
+                sh 'echo hello'
+            }
 	}
 
 	stage('Prepare') {
-
+            steps {
+                sh 'echo world'
+            }
 	}
     }
 }
